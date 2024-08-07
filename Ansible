@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Update system packages
+echo "Updating system packages..."
+sudo apt update
+sudo apt upgrade -y
+
+# Install Python and pip
+echo "Installing Python and pip..."
+sudo apt install python3 python3-pip -y
+
+# Install Ansible using pip
+echo "Installing Ansible with pip..."
+pip3 install ansible
+
+# Verify Ansible installation
+echo "Verifying Ansible installation..."
+ansible --version
+
+# Script end
+echo "Ansible installation script completed."
